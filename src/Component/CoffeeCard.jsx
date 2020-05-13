@@ -26,7 +26,7 @@ const useStyles = makeStyles({
       marginBottom: 12,
     },
     avatar: {
-        backgroundColor: red,
+        backgroundColor: red[500],
       },
       margintop10:{
         marginTop:10
