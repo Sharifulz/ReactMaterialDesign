@@ -1,17 +1,19 @@
-import React, { Component } from 'react';
-import './App.css';
-import Header from './Component/layout/Header.js';
-import RecipeReviewCard from './Component/RecipeReviewCard.js';
+import React from 'react';
+import {Grid} from '@material-ui/core'
+import Header from './Component/Header.jsx'
+import Content from './Component/Content.jsx'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Header></Header>
-        <RecipeReviewCard></RecipeReviewCard>
-      </div>
-    );
-  }
-}
+const App = ()=>{
+  return(
+    <Grid container direction='column'>
+      <Grid item><Header></Header></Grid>
+      <Grid item container>
+          <Grid item xs={false} sm={2}/>
+            <Grid item xs={12} sm={8}><Content></Content></Grid>
+          <Grid item  xs={false} sm={2}/>
+        </Grid>
+    </Grid>
+  );
+};
 
 export default App;
