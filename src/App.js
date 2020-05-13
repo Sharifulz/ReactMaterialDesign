@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
-import NavBar from './Component/NavBar.js';
+import Header from './Component/layout/Header.js';
+import RecipeReviewCard from './Component/RecipeReviewCard.js';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <NavBar></NavBar>
-        </div>
+        <Header></Header>
+        <RecipeReviewCard></RecipeReviewCard>
+      </div>
     );
   }
 }
