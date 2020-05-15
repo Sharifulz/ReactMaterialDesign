@@ -1,17 +1,15 @@
-import React from 'react';
-import {Grid} from '@material-ui/core'
-import Counter from './Component/counter'
-import 'bootstrap/dist/css/bootstrap.css'
+import React, {Component} from 'react';
+import Registration from './Component/registration/registration'
 
 
-const App = ()=>{
-  return(
-    <Grid container direction='column'>
-      <Grid item xs={12} sm={12}>
-        <Counter/>
-      </Grid>
-    </Grid>
-  );
-};
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Registration></Registration>
+      </div>
+    );
+  }
+}
 
 export default App;
