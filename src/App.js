@@ -1,13 +1,20 @@
 import React, {Component} from 'react';
-import Registration from './Component/registration/registration'
+import NavBar from './Component/nav'
+import Home from './Component/pages/home'
+import Shop from './Component/pages/shop'
+import {BrowserRouter as Router,Switch, Route} from 'react-router-dom'
 
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <Registration></Registration>
-      </div>
+      <Router>
+      <Switch>
+        <Route path="/" exact component={NavBar}></Route>
+        <Route path="/about" component={Home}></Route>
+        <Route path="/shop" component={Shop}></Route>
+      </Switch>
+     </Router>
     );
   }
 }
