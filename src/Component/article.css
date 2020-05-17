@@ -1,0 +1,11 @@
+.h1tag{
+    background: chartreuse;
+    border-radius: 8px;
+    color: blue;
+    text-align: center;
+}
+
+.h3tag{
+    color: rgb(0, 0, 0);
+    text-align: justify;
+}
