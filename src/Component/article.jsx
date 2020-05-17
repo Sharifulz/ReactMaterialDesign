@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./article.css";
-import { Link } from "react-router-dom";
 import MyNavBar from "./navbar/nav";
 
 class Article extends Component {

@@ -15,8 +15,8 @@ class MyNavBar extends Component {
           <IconButton edge="start" color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
-          <Link to="/about" className="button-text">
-            <Button color="inherit">About</Button>
+          <Link to="/home" className="button-text">
+            <Button color="inherit">Home</Button>
           </Link>
           <Link to="/shop" className="button-text">
             <Button color="inherit">Shop</Button>
