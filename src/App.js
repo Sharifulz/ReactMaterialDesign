@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import NavBar from "./Component/nav";
+import MyNavBar from "./Component/navbar/nav";
 import Home from "./Component/pages/home";
 import Shop from "./Component/pages/shop";
 import Article from "./Component/article";
@@ -9,9 +9,8 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <h1>Hellow there</h1>
         <Switch>
-          <Route path="/" exact component={NavBar}></Route>
+          <Route path="/" exact component={MyNavBar}></Route>
           <Route path="/about" component={Home}></Route>
           <Route path="/shop" component={Shop}></Route>
           <Route path="/article" component={Article}></Route>
