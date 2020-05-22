@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import MyNavBar from "./Component/navbar/nav";
 import Home from "./Component/pages/home";
 import Shop from "./Component/pages/shop";
 import Article from "./Component/article";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Subscribe from "./Component/state/subscribe";
 
 class App extends Component {
   render() {
@@ -14,6 +14,7 @@ class App extends Component {
           <Route path="/home" component={Home}></Route>
           <Route path="/shop" component={Shop}></Route>
           <Route path="/article" component={Article}></Route>
+          <Route path="/state" component={Subscribe}></Route>
         </Switch>
       </Router>
     );
