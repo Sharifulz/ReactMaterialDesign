@@ -11,7 +11,9 @@ class ContactForm extends Component {
 
   btnOnClick = (e) => {
     e.preventDefault();
-    console.log(`First Name: ${this.state.firstName}`);
+    let fname = this.state.firstName;
+    // console.log(`First Name: ${this.state.firstName} `);
+    console.log(`First Name:` + fname);
   };
 
   handleChange = (e) => {
