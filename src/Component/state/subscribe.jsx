@@ -5,12 +5,17 @@ class Subscribe extends Component {
   constructor() {
     super();
     this.state = {
-      msg: "Please subscribe. ",
+      msg: "UNSUBSCRIBE",
+      btnText: "SUBSCRIBE",
     };
   }
 
   onBtnClink() {
-    this.setState({ msg: "Thanks for subscribing!" });
+    if (this.state.msg === "UNSUBSCRIBE") {
+      this.setState({ msg: "SUBSCRIBE", btnText: "UNSUBSCRIBE" });
+    } else {
+      this.setState({ msg: "UNSUBSCRIBE", btnText: "SUBSCRIBE" });
+    }
   }
 
   render() {
@@ -18,7 +23,7 @@ class Subscribe extends Component {
       <div>
         <MyNavBar></MyNavBar>
         <h1>{this.state.msg}</h1>
-        <button onClick={() => this.onBtnClink()}>Subscribe</button>
+        <button onClick={() => this.onBtnClink()}>{this.state.btnText}</button>
       </div>
     );
   }
