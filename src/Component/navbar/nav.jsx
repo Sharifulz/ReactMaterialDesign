@@ -31,6 +31,9 @@ class MyNavBar extends Component {
           <Link to="/state" className="button-text">
             <Button color="inherit">Subscribe</Button>
           </Link>
+          <Link to="/contact" className="button-text">
+            <Button color="inherit">Contact</Button>
+          </Link>
           <IconButton
             aria-label="account of current user"
             aria-controls="menu-appbar"
