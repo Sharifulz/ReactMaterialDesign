@@ -5,22 +5,29 @@ class ContactForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "",
+      firstName: null,
     };
   }
 
   btnOnClick = (e) => {
     e.preventDefault();
-    const { name, value } = e.target;
-    console.log(name);
-    console.log(value);
+    console.log(`First Name: ${this.state.firstName}`);
+  };
+
+  handleChange = (e) => {
+    this.setState({ firstName: e.target.value });
   };
 
   render() {
     return (
       <center>
         <form style={{ margin: 20 }}>
-          <input type="text" placeholder="Enter your name" name="FirstName" />
+          <input
+            type="text"
+            onChange={this.handleChange}
+            placeholder="Enter your name"
+            name="firstName"
+          />
           <input type="submit" value="SUBMIT" onClick={this.btnOnClick} />
         </form>
       </center>
